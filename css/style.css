@@ -1,0 +1,226 @@
+body, div, span, p, input, ul, li, button{
+  word-break:break-all;
+  margin:0;
+  padding:0;
+  color:#fff;
+  font-family: "돋움",Dotum,"맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+  font-size:16px;
+  line-height:24px;
+}
+
+html, body{
+  width:100%;
+  height:100%;
+}
+
+ul, li{
+  list-style-type:none;
+}
+
+a:link, a:visited, a:hover, a:active{
+  text-decoration:none;
+}
+
+input{
+  vertical-align:middle;
+}
+
+input[type="text"]{
+  color:#000;
+}
+
+button{
+  cursor: pointer;
+  padding:5px 10px;
+  color:#fff;
+  border:1px solid #fff;
+  background: none;
+}
+
+button:hover{
+  color:#000;
+  background-color:#fff;
+}
+
+body{
+  background: #242424;
+}
+
+.wrap{
+  width:100%;
+  height:100%;
+  min-width:500px;
+  min-height:830px;
+}
+
+.playerSection{
+  padding:20px;
+}
+
+.playerSection .infoArea{
+  position: relative;
+  padding:10px;
+  background: #000;
+}
+
+.playerSection .infoArea .title{
+  font-weight: bold;
+  font-size:1.2rem;
+}
+
+.playerSection .infoArea .playTime{
+  position: absolute;
+  right:10px;
+  top:10px;
+}
+
+.playerSection .progressArea{
+  padding:20px 0;
+}
+
+.playerSection .progressArea .totalBar{
+  height:10px;
+  background-color: #fff;
+}
+
+.playerSection .progressArea .currentBar{
+  height:10px;
+  background-color: #e91e63;
+}
+
+.playerSection .utilArea{
+  text-align: center;
+}
+
+.playerSection .utilArea button{
+  margin-left:5px;
+}
+
+.playerSection .utilArea button.first{
+  margin-left:0;
+}
+
+.listSectionWrap{
+  margin:20px;
+}
+
+.listSection{
+  position: relative;
+  border-top:10px solid #fff;
+  border-bottom:10px solid #fff;
+}
+
+.listSection:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.listSection .musicList, .listSection .playList{
+  float:left;
+}
+
+.listSection .musicList .listCont, .listSection .playList .listCont{
+  display: none;
+  float:left;
+}
+
+.listSection .musicList:after, .listSection .playList:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.listSection .musicList.select .listTitle, .listSection .playList.select .listTitle{
+  color:#fff;
+  background-color: #000;
+}
+
+.listSection .musicList.select .listCont, .listSection .playList.select .listCont{
+  display: block;
+}
+
+
+.listSection .listTitle{
+  cursor: pointer;
+  float:left;
+  padding:20px;
+  color:#767676;
+}
+
+.listSection .listCont{
+  position: absolute;
+  top:104px;
+  left:0;
+  width:100%;
+}
+
+.listSection .utilArea{
+  position: relative;
+  padding-bottom:20px;
+}
+
+.listSection .utilArea button{
+  margin-left:5px;
+}
+
+.listSection .utilArea button.first{
+  margin-left:0;
+}
+
+.listSection .utilArea .rightArea{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.listSection .listArea{
+  overflow-y: auto;
+  height:400px;
+  padding:20px;
+  background-color:#fff;
+}
+
+.listSection .listArea li{
+  position: relative;
+  padding:5px;
+}
+
+.listSection .listArea li.musicItem{
+  border:2px solid #fff;
+}
+
+.listSection .listArea li.musicItem:hover{
+  cursor: pointer;
+}
+
+.listSection .listArea li.musicItem.select{
+  border:2px solid #e91e63;
+}
+
+.listSection .listArea li.musicItem.playing{
+  color:#e91e63;
+  font-weight: bold;
+}
+
+.listSection .listArea li.musicItem.select.playing{
+  color:red;
+  font-weight: bold;
+}
+
+.listSection .listArea li .title{
+  margin-left:10px;
+  color:#000;
+}
+
+.listSection .listArea li .playTime{
+  position: absolute;
+  top:10px;
+  right:5px;
+  color:#000;
+}
+
+.listSection .listArea li .btnDel{
+  color:#000;
+  border:1px solid #000;
+}

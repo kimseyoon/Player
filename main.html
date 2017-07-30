@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+	<meta charset="utf-8">
+  <title>Music Player</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="playerSection">
+    <div class="infoArea">
+      <p class="title">현재 재생중인 음악이 없습니다</p>
+      <p class="playTime">-00:00</p>
+    </div>
+    <div class="progressArea">
+      <div class="totalBar">
+        <p class="currentBar" style="width:0%;"></p>
+      </div>
+    </div>
+    <div class="utilArea">
+      <button type="button" name="button" id="prevMusic" class="first">이전곡</button>
+      <button type="button" name="button" id="playMusic">재생</button>
+      <button type="button" name="button" id="stopMusic">멈춤</button>
+      <button type="button" name="button" id="nextMusic">다음곡</button>
+    </div>
+  </div>
+
+	<div class="listSectionWrap">
+	  <div class="listSection">
+	    <div class="musicList select">
+				<div class="listTitle">음원목록</div>
+				<div class="listCont">
+		      <div class="utilArea">
+		        <button type="button" name="button" id="btnAddPlayList" class="first ">재생목록 생성</button>
+		        <button type="button" name="button" id="btnMusicListDel">삭제</button>
+		      </div>
+		      <ul class="listArea">
+		      </ul>
+				</div>
+	    </div>
+
+			<div class="playListWrap">
+			</div>
+
+			<script type="template" id="playList-template">
+			<div class="playList" id={{id}}>
+				<div class="listTitle">{{title}}</div>
+				<div class="listCont">
+					<div class="utilArea">
+						<button type="button" name="button" id="btnOrder" class="first">내림차순</button>
+						<button type="button" name="button">랜덤 정렬</button>
+						<div class="rightArea">
+							<button type="button" name="button" id="btnDelPlayList">PlayList 삭제</button>
+						</div>
+					</div>
+					<ul class="listArea">
+					{{items}}
+					</ul>
+				</div>
+			</div>
+			</script>
+
+	  </div>
+	</div>
+
+	<script type="text/javascript" src="js/polyfill.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="data/data.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</div>
+</body>
+</html>
